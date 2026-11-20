@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body Scent — น้ำหอมฉีดตัวและโรลออนสำหรับทุกอารมณ์</title>
+  <meta name="description" content="Body Scent น้ำหอมฉีดตัวและโรลออน เลือกกลิ่นได้ตามอารมณ์ Fresh, Sweet, Confident และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าแรก */
+    .hero-full {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - var(--header-h));
+      min-height: calc(100svh - var(--header-h));
+      padding: var(--space-6) 0;
+      background: linear-gradient(180deg, var(--ivory) 0%, var(--cream) 100%);
+    }
+
+    .hero-full .brand-mark {
+      display: block;
+      margin-bottom: var(--space-4);
+      font-size: 1.1rem;
+      color: var(--bronze-deep);
+    }
+
+    .hero-full h1 {
+      max-width: 15em;
+      font-size: clamp(2rem, 5.2vw, 3.75rem);
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+
+    .hero-full .lead {
+      max-width: 32em;
+      margin-bottom: var(--space-4);
+    }
+
+    .mood-card {
+      padding: var(--space-4) var(--space-3);
+      color: var(--ink-soft);
+    }
+
+    .mood-card:hover {
+      color: var(--ink-soft);
+    }
+
+    .mood-card__head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .mood-card__name {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .mood-card__th {
+      margin: 0.25rem 0 0;
+      color: var(--ink-mute);
+      font-size: 0.9rem;
+    }
+
+    .mood-card__desc {
+      flex: 1;
+      margin: 0 0 var(--space-3);
+      font-size: 0.925rem;
+      line-height: 1.8;
+    }
+
+    .mood-card__cta {
+      align-self: flex-start;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--gold);
+      color: var(--bronze-deep);
+      font-size: 0.9rem;
+    }
+
+    .mood-card:hover .mood-card__cta {
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand-mark" href="index.html">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+          <li><a href="order.html">สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-full">
+      <div class="container">
+        <span class="brand-mark">Body Scent</span>
+        <h1>เติมเต็มตัวตนและสร้างบรรยากาศที่ใช่ในแบบคุณ</h1>
+        <hr class="rule">
+        <p class="lead">ด้วยกลิ่นหอมที่ออกแบบมาเพื่อทุกอารมณ์ในแต่ละวัน</p>
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section" id="moods">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <hr class="rule">
+          <p>วันนี้อยากรู้สึกแบบไหน เลือกกลิ่นที่เข้ากับวันของคุณ</p>
+        </div>
+
+        <div class="grid grid--4">
+          <a class="card mood-card mood-fresh" href="product.html?mood=fresh">
+            <div class="mood-card__head">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card__name">Fresh</h3>
+            </div>
+            <p class="mood-card__th">สดชื่น</p>
+            <span class="mood-rule"></span>
+            <p class="mood-card__desc">ปลุกความตื่นตัวให้ทุกเช้าด้วยกลิ่นหอมโปร่งเบาสบาย เหมือนเพิ่งอาบน้ำเสร็จใหม่ๆ พร้อมลุยทุกกิจกรรมอย่างสดใส</p>
+            <span class="mood-card__cta">ดูสินค้า Fresh</span>
+          </a>
+
+          <a class="card mood-card mood-sweet" href="product.html?mood=sweet">
+            <div class="mood-card__head">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card__name">Sweet</h3>
+            </div>
+            <p class="mood-card__th">หวานละมุน</p>
+            <span class="mood-rule"></span>
+            <p class="mood-card__desc">สัมผัสความอ่อนโยนน่ารักที่แฝงไปด้วยความอบอุ่นสบายใจ มอบกลิ่นหวานแผ่วเบาที่ชวนให้รู้สึกผ่อนคลายและเป็นกันเอง</p>
+            <span class="mood-card__cta">ดูสินค้า Sweet</span>
+          </a>
+
+          <a class="card mood-card mood-confident" href="product.html?mood=confident">
+            <div class="mood-card__head">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card__name">Confident</h3>
+            </div>
+            <p class="mood-card__th">มั่นใจ</p>
+            <span class="mood-rule"></span>
+            <p class="mood-card__desc">เสริมบุคลิกให้ดูดี นิ่ง สะอาด และน่าเชื่อถือ พร้อมรับมือกับทุกสถานการณ์สำคัญและการพบปะผู้คนได้อย่างเต็มที่</p>
+            <span class="mood-card__cta">ดูสินค้า Confident</span>
+          </a>
+
+          <a class="card mood-card mood-romance" href="product.html?mood=romance">
+            <div class="mood-card__head">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card__name">Romance</h3>
+            </div>
+            <p class="mood-card__th">โรแมนติก</p>
+            <span class="mood-rule"></span>
+            <p class="mood-card__desc">เผยเสน่ห์ที่อบอุ่น น่าหลงใหล และชวนให้จดจำ ด้วยมิติของความหวานที่ลุ่มลึกขึ้นสำหรับช่วงเวลาพิเศษของคุณ</p>
+            <span class="mood-card__cta">ดูสินค้า Romance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <span class="brand-mark">Body Scent</span>
+        <p class="mt-3 mb-0">น้ำหอมฉีดตัวและโรลออน<br>สำหรับทุกอารมณ์ในแต่ละวัน</p>
+      </div>
+      <ul class="nav">
+        <li><a href="product.html">สินค้า</a></li>
+        <li><a href="order.html">สั่งซื้อ</a></li>
+      </ul>
+      <p class="footer-note mb-0">© 2026 Body Scent สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

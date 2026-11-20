@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ขอบคุณสำหรับคำสั่งซื้อ — Body Scent</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าขอบคุณ */
+    .thanks {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - var(--header-h));
+      min-height: calc(100svh - var(--header-h));
+      padding: var(--space-6) 0;
+      background: linear-gradient(180deg, var(--ivory) 0%, var(--cream) 100%);
+    }
+
+    .thanks h1 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+
+    .thanks p {
+      margin-bottom: var(--space-4);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand-mark" href="index.html">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+          <li><a href="order.html">สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thanks">
+    <div class="container container--narrow text-center">
+      <h1>ขอบคุณสำหรับคำสั่งซื้อ</h1>
+      <hr class="rule">
+      <p class="lead">เราได้รับข้อมูลของคุณเรียบร้อยแล้ว และจะติดต่อกลับผ่านช่องทางที่คุณให้ไว้เพื่อยืนยันคำสั่งซื้อ</p>
+      <a class="btn" href="index.html">กลับหน้าแรก</a>
+    </div>
+  </main>
+
+</body>
+</html>
